@@ -11,51 +11,71 @@ server.headersTimeout = 120 * 1000;
 
 const html = `
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello from Render!</title>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script>
-      setTimeout(() => {
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { y: 0.6 },
-          disableForReducedMotion: true
-        });
-      }, 500);
-    </script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>OptiMove</title>
     <style>
-      @import url("https://p.typekit.net/p.css?s=1&k=vnd5zic&ht=tk&f=39475.39476.39477.39478.39479.39480.39481.39482&a=18673890&app=typekit&e=css");
-      @font-face {
-        font-family: "neo-sans";
-        src: url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-        font-style: normal;
-        font-weight: 700;
-      }
-      html {
-        font-family: neo-sans;
-        font-weight: 700;
-        font-size: calc(62rem / 16);
-      }
-      body {
-        background: white;
-      }
-      section {
-        border-radius: 1em;
-        padding: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-      }
+
     </style>
-  </head>
-  <body>
-    <section>
-      Hello from Render!
-    </section>
-  </body>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2 class="CompanyName">OptiMove</h2>
+        <nav>
+            <ul class="sub-header">
+                <li><a href="#" class="subs">Blog</a></li>
+                <li><a href="#" class="subs">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-banner">
+        <h1>Optimize Your Mechanics, Get <span class="gradient-text">Pain Free!</span></h1>
+        <p>Get started with a consultation</p>
+        <a rel="noopener" target="_blank" href="https://calendly.com/optimove-training/30min" ><button class="btn btn-primary">Click here to book!</button></a>
+        <button class="btn btn-secondary">Have questions?</button>
+        <p>Breakthrough cutting edge physical application designed to correct dysfunctions and optimize mechanics,
+            health, and your time.</p>
+        <ul id="checklist">
+            <li><span>✓</span>50 Minute Sessions</li>
+            <li><span>✓</span>Minimal Equipment</li>
+            <li><span>✓</span>All Fitness Levels</li>
+        </ul>
+    </div>
+
+    <div class="features">
+        <div class="feature-item">
+            <img src="ethanBackshot.png" alt="Feature 1">
+            <p>“I came across Optimove after suffering a shoulder (AC joint) injury and was interested in an alternative to the standard physical therapy. Prior to that I had been going to the chiropractor for the last 8 years on a weekly basis for "maintenance" since I have always been active and my scoliosis caused upper back pain. I would say three months into training with Optimove that pain has vanished with no return while at the same time it helped me fully revive my shoulder. I look forward to continuing this long journey of consistent improvement in my biomechanics and overall health via Optimove.” </p>
+        </div>
+        <div class="feature-item">
+            <img src="TaylorSidePosture.png" alt="Feature 2">
+            <p>"I had severe sciatica that would some days stop me from getting out of bed. Frustrated with doctors, chiropractors, and physical therapists who couldn't solve my problems, I stumbled an ad of what appeared as ninjas dancing with kettlebells. Within 6 months, twice a week working with Optimove, I was able to find immense relief, I was able to work my physical job and not feel like I taxed my body at the end of the day. Not only was it fixing my pain, it was healing my body in its entirety. I move better than I did 10 years ago, life hasn't gotten easier but now have a resilient body more apt to deal with environmental stressors.
+                Many people seek this to relieve their physical pain, but extends into so much more than that, they’ve laid out the blueprint to health and well-being."</p>
+        </div>
+        <div class="feature-item">
+            <img src="https://via.placeholder.com/150" alt="Feature 3">
+            <p>Feature description</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Start Optimizing Your Mechanics Now</p>
+        <p>© 2023 OptiMove. All rights reserved.</p>
+    </div>
+
+    <script>
+        // Add any JavaScript you need here
+    </script>
+
+</body>
+
 </html>
 `

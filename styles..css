@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family: Inter, Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: linear-gradient(to right, #42275a, #734b6d);
+}
+
+.header {
+    background-image: linear-gradient(to right, rgba(204, 43, 94, 0.35), rgba(117, 58, 136, 0.35));
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.2 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.CompanyName {
+    padding: 0px 10px;
+}
+
+.sub-header,
+.subs {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    padding: 0px 15px; 
+}
+.sub-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-header, .subs:hover {
+    color: cornflowerblue;
+    transition: ease-in-out 0.2s;
+}
+
+.main-banner {
+    background-image: url('TensegrityManBG.png'); /* Add your background image here */
+    background-size: cover; /* Cover the entire area of the element */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    text-align: center;
+    padding: 95px 10px;
+}
+
+.main-banner span {
+    color: red;
+}
+
+.main-banner h1 {
+    margin: 0;
+    color: white;
+}
+.main-banner p {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.main-banner ul {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 30%;
+}
+
+.main-banner #checklist {
+    justify-content: space-between;
+}
+
+.main-banner img {
+    width: 80%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: large;
+}
+.btn-primary {
+    background-color: #f7a32e;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #333333;
+    border-radius: 6px;
+    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 
+                0 4px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(to bottom, #f8b133, #f7a32e);
+    transition: all 0.1s ease-in-out;
+}
+.btn-primary:active {
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+.btn-primary:hover {
+    background-image: linear-gradient(to bottom, #e09e2b, #d89128);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ADD8E6;
+    border: 4px solid #ADD8E6;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: black;
+    color: white;
+    background-image: linear-gradient(to right, #42275a, #734b6d);
+}
+
+.feature-item {
+    width: 30%;
+    text-align: center;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+@media (max-width: 858px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-item {
+        width: 100%;
+    }
+    .feature-item img {
+        width: 90% !important;
+        height: auto !important;
+    }
+    .main-banner ul {
+        padding: 0px 20px;
+    }
+    .main-banner {
+        background-position: center; /* Center the image in the element */
+    }
+}
+
+@keyframes rotateGradient {
+    100% {
+        background-position: 0% 50%;
+    }
+    0% {
+        background-position: -200% 50%;
+    }
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, red, orange, yellow, blue, red, orange, yellow, blue);
+    background-size: 400% auto;
+    color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; /* Fallback: Need to duplicate color, can't be transparent */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rotateGradient 150s linear infinite;
+    display: inline;
+  }
