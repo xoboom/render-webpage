@@ -33,7 +33,7 @@ const html = `
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
-        background-image: linear-gradient(to right, #42275a, #734b6d);
+        background-image: linear-gradient(to right, #42275a, black);
     }
     
     .header {
@@ -153,7 +153,7 @@ const html = `
         padding: 20px;
         background: black;
         color: white;
-        background-image: linear-gradient(to right, #42275a, #734b6d);
+        background-image: linear-gradient(to right, #42275a, black);
     }
     
     .feature-item {
