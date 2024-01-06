@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boom's Blog</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* Additional CSS for neubrutalism design with exciting colors */
+  .neubrutalism {
+    background-color: #f0f0f0;
+    border: 1px solid #333;
+    box-shadow: 4px 4px 0px #333;
+  }
+  .neubrutalism-card {
+    background-color: #fff;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 0px #333;
+  }
+  .neubrutalism-btn {
+    background-color: rgb(245,110,15);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    box-shadow: 2px 2px 0px #333;
+  }
+</style>
+</head>
+<body class="neubrutalism">
+
+<div class="max-w-2xl mx-auto py-10 px-4">
+  <!-- Header -->
+  <header class="flex items-center justify-between mb-10">
+    <h1 class="text-3xl font-bold">boom's blog</h1>
+    <div>
+
+      <button onclick="window.location.href='index.html';" class="neubrutalism-btn">Home</button>
+    </div>
+  </header>
+  
+  <!-- Navigation -->
+  <nav class="mb-10">
+    <ul class="flex space-x-4">
+      <li><a href="#" class="text-lg font-bold text-orange-500">Main</a></li>
+      <li><a href="#archive" class="text-lg text-gray-700">Archive</a></li>
+      <li><a href="#" class="text-lg text-gray-700">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Article Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+    <!-- Card 1 -->
+    <div class="neubrutalism-card p-4">
+        <a>
+        
+        <h2 class="text-2xl font-bold mb-1">Future of Fitness & Health</h2>
+        <p class="text-gray-600 mb-2">vignettes of many worlds</p>
+        <div class="flex items-center justify-between">
+            <span class="text-gray-600">DEC 28 · BOOM</span>
+            <div class="flex items-center">
+            <span class="mr-1">🖤 195</span>
+            <span>💬 30</span>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="neubrutalism-card p-4">
+        <img src="https://source.unsplash.com/random/400x200?abstract" alt="Cocaine Capitalism" class="mb-2">
+        <h2 class="text-2xl font-bold mb-1">AGI Futures</h2>
+        <p class="text-gray-600 mb-2">vignettes of many worlds</p>
+        <div class="flex items-center justify-between">
+          <span class="text-gray-600">MAY 16 · ROON</span>
+          <div class="flex items-center">
+            <span class="mr-1">🖤 195</span>
+            <span>💬 30</span>
+          </div>
+        </div>
+      </div>
+      <div class="neubrutalism-card p-4">
+        <img src="https://source.unsplash.com/random/400x200?abstract" alt="Cocaine Capitalism" class="mb-2">
+        <h2 class="text-2xl font-bold mb-1">AGI Futures</h2>
+        <p class="text-gray-600 mb-2">vignettes of many worlds</p>
+        <div class="flex items-center justify-between">
+          <span class="text-gray-600">MAY 16 · ROON</span>
+          <div class="flex items-center">
+            <span class="mr-1">🖤 195</span>
+            <span>💬 30</span>
+          </div>
+        </div>
+      </div>
+    <!-- Card 2 -->
+    <!-- ... Add more cards as needed -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-600">
+    <p>© 2024 Boom's Blog. All rights reserved.</p>
+  </footer>
+</div>
+
+</body>
+</html>
