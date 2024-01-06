@@ -22,7 +22,7 @@ const html = `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>OptiMove</title>
 </head>
@@ -33,7 +33,7 @@ const html = `
         <h2 class="CompanyName">OptiMove</h2>
         <nav>
             <ul class="sub-header">
-                <li><a href="blog.html" class="subs">Blog</a></li>
+                <li><a href="/blog.html" class="subs">Blog</a></li>
                 <li><a href="#" class="subs">Support</a></li>
             </ul>
         </nav>
