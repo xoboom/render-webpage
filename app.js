@@ -9,6 +9,9 @@ app.use(express.static('public'));
 app.get('/blog', (req, res) => {
     res.sendFile(path.join(__dirname, 'blog.html')); // Serve the blog.html file
   });
+  app.get('/styles', (req, res) => {
+    res.sendFile(path.join(__dirname, 'styles.css')); // Serve the blog.html file
+  });
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
